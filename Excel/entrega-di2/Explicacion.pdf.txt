@@ -1,0 +1,7 @@
+Explicación de la generación del informe PDF
+
+La aplicación permite elegir un deportista y un intervalo de fechas desde la interfaz Swing. Antes de generar el documento comprueba que el intervalo sea válido y que existan datos. El resumen filtra las sesiones y las pruebas del deportista seleccionado, calcula los indicadores y agrupa el entrenamiento por semanas, incluyendo semanas sin sesiones.
+
+El PDF se genera con Apache PDFBox 3.0.1, indicado en los materiales de la asignatura. Se organiza en cuatro páginas A4: resumen, carga semanal, pruebas de 5 km e interpretación. Las tablas y los textos se dibujan con las fuentes DejaVu incluidas en el proyecto; los gráficos se crean con Java2D y se insertan como imágenes. La ilustración de portada es genérica porque no se dispone de una fotografía autorizada del deportista.
+
+La numeración de páginas y los márgenes mantienen una presentación uniforme. La interpretación describe tendencias observadas y advierte que los indicadores no explican por sí solos sus causas. Los informes de ejemplo corresponden a dos deportistas distintos y se generan desde la aplicación con datos del proyecto.
